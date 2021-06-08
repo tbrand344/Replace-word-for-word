@@ -1,0 +1,48 @@
+import java.util.*;
+
+public class Main
+{
+	public static void main(String[] args) {
+		Scanner inputNum = new Scanner(System.in);
+		Scanner inputWord = new Scanner(System.in);
+		String[] places = {"Hello", "There", "Person"};
+		int choice;
+		String newWord;
+		System.out.println("Here are your words.\n");
+		for(int index = 0; index < places.length; index++) {
+		    System.out.print(places[index] + " ");
+		}
+		System.out.println("\n\nType in " 
+		    + "the spot where you want to place your word:\n");
+		choice = inputNum.nextInt();
+		switch(choice) {
+		    case 0: 
+		        System.out.println("\nType in your new word: \n");
+		        newWord = inputWord.nextLine();
+		        System.out.print("\n");
+		        places[0] = newWord;
+		        for(int i = 0; i < places.length; i++) {
+		            System.out.print(places[i] + " ");
+		        }
+		        break;
+		    case 1:
+		        System.out.println("\nType in your new word: \n");
+		        newWord = inputWord.nextLine();
+		        System.out.print("\n");
+		        places[1] = newWord;
+		        for(int i = 0; i < places.length; i++) {
+		            System.out.print(places[i] + " ");
+		        }
+		        break;
+		    case 2:
+		        System.out.println("\nType in your new word: \n");
+		        newWord = inputWord.nextLine();
+		        System.out.print("\n");
+		        places[2] = newWord;
+		        for(int i = 0; i < places.length; i++) {
+		            System.out.print(places[i] + " ");
+		        }
+		        break;
+		}
+	}
+}
